@@ -1,0 +1,101 @@
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 6em;
+    font-weight: 500;
+    color: white;
+    font-family: "Grand Hotel", cursive;
+}
+
+@media (max-width: 355px) {
+    h1 {
+        font-size: 4em;
+    }
+}
+
+h2 {
+    color: #fff;
+    opacity: .6;
+    line-height: 1.25em;
+    margin: 2em 0 4em;
+}
+
+#top {
+    padding-top: 15%;
+}
+
+img {
+    max-height: 75%;
+    float: right;
+}
+
+.full-screen {
+    min-height: 100%;
+    width: 100% padding : 0;
+    margin: 0;
+}
+
+.yellow-bg {
+    background-color: #FFCC2F;
+}
+
+.red-bg {
+    background-color: indianred;
+}
+
+.green-bg {
+    background-color: rgb(49, 151, 83);
+    background-color: rgb(133, 105, 151);
+}
+
+.bottom-90 {
+    position: absolute;
+    bottom: 10px;
+}
+
+.angle-down-animation {
+    /* Chrome, Safari, Opera */
+    -webkit-animation-name: movement;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: initial;
+    -webkit-animation-delay: initial;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: initial;
+    -webkit-animation-play-state: initial;
+    /* Standard syntax */
+    animation-name: movement;
+    animation-duration: 2s;
+    animation-timing-function: initial;
+    animation-delay: initial;
+    animation-iteration-count: infinite;
+    animation-direction: initial;
+    animation-play-state: initial;
+}
+
+@-webkit-keyframes movement {
+    0%, 100%, 20%, 50%, 80% {
+        bottom: 10px
+    }
+    40% {
+        bottom: 30px
+    }
+    60% {
+        bottom: 15px
+    }
+}
+
+@keyframes movement {
+    0%, 100%, 20%, 50%, 80% {
+        bottom: 10px
+    }
+    40% {
+        bottom: 30px
+    }
+    60% {
+        bottom: 15px
+    }
+}
