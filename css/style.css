@@ -4,7 +4,91 @@ html, body {
     margin: 0;
 }
 
-h1 {
+body {
+    overflow-x: hidden;
+}
+
+.container-fluid {
+    z-index: 1;
+}
+
+#closure{
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+
+
+    -webkit-transition: all .4s ease-in 0s;
+    -moz-transition: all .4s ease-in 0s;
+    -ms-transition: all .4s ease-in 0s;
+    -o-transition: all .4s ease-in 0s;
+    transition: all .4s ease-in 0s;
+}
+
+/** Side bar menu **/
+
+#navigation-menu {
+    position: fixed;
+    float: left;
+    top: 0;
+    z-index: 15;
+    width: 300px;
+    height: 100%;
+    background-color: #000000;
+
+    -webkit-transition: all .4s ease-in 0s;
+    -moz-transition: all .4s ease-in 0s;
+    -ms-transition: all .4s ease-in 0s;
+    -o-transition: all .4s ease-in 0s;
+    transition: all .4s ease-in 0s;
+}
+
+.opened-nav {
+    left: 0;
+}
+
+.closed-nav {
+    left: -300px;
+}
+
+.regular-screen{
+    left: 0;
+}
+
+.move-right{
+    left: 300px;
+}
+
+/** End of side bar menu **/
+
+
+
+/******************************** Start of smoke-screen */
+
+#smoke-screen {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+}
+
+.hide-smoke-screen {
+    position: absolute;
+    opacity: 0;
+    z-index: -10;
+}
+
+.show-smoke-screen {
+    position: fixed;
+    opacity: 0.4;
+    z-index: 12;
+}
+
+/******************************** End of smoke-screen */
+
+.name-meyyappan {
     font-size: 6em;
     font-weight: 500;
     color: white;
@@ -12,20 +96,45 @@ h1 {
 }
 
 @media (max-width: 355px) {
-    h1 {
+    .name-meyyappan {
         font-size: 4em;
     }
 }
 
-h2 {
+.fa-angle-down-custom {
+    font-size: 7em;
+    color: #fff;
+    opacity: .6;
+}
+
+@media (max-width: 411px) {
+    .fa-angle-down-custom {
+        font-size: 5em;
+    }
+}
+
+#motto-top {
     color: #fff;
     opacity: .6;
     line-height: 1.25em;
-    margin: 2em 0 4em;
+    /*margin: 2em 0 4em;*/
+    margin-top: 2em;
 }
 
 #top {
-    padding-top: 15%;
+    /*padding-top: 15%;*/
+    z-index: 10;
+    position: relative;
+}
+
+#upper-padding-top {
+    height: 250px;
+}
+
+@media (max-width: 992px) {
+    #upper-padding-top {
+        height: 50px;
+    }
 }
 
 img {
@@ -47,9 +156,14 @@ img {
     background-color: indianred;
 }
 
+.lilac-bg {
+
+    background-color: rgb(133, 105, 151);
+}
+
 .green-bg {
     background-color: rgb(49, 151, 83);
-    background-color: rgb(133, 105, 151);
+    background-color: rgb(31, 151, 144);
 }
 
 .bottom-90 {
@@ -78,24 +192,64 @@ img {
 
 @-webkit-keyframes movement {
     0%, 100%, 20%, 50%, 80% {
-        bottom: 10px
+        bottom: 10px;
     }
     40% {
-        bottom: 30px
+        bottom: 30px;
     }
     60% {
-        bottom: 15px
+        bottom: 15px;
     }
 }
 
 @keyframes movement {
     0%, 100%, 20%, 50%, 80% {
-        bottom: 10px
+        bottom: 10px;
     }
     40% {
-        bottom: 30px
+        bottom: 30px;
     }
     60% {
-        bottom: 15px
+        bottom: 15px;
     }
+}
+
+#name-uni {
+
+    display: inline-block;
+}
+
+.spacer-height-100 {
+    display: block;
+    height: 100px;
+}
+
+.fa-logo {
+    font-size: 3em;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    opacity: 0.3;
+}
+
+.page-title {
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 6em;
+    font-weight: 500;
+    color: white;
+
+}
+
+.university-content {
+    line-height: 2.3em;
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+#menu-toggle {
+    top: 5px;
+    left: 5px;
+    position: fixed;
+    color: #fff;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, .3);
+    z-index: 5;
 }
