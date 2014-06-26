@@ -137,11 +137,6 @@ body {
     }
 }
 
-img {
-    max-height: 75%;
-    float: right;
-}
-
 .full-screen {
     min-height: 100%;
     width: 100% padding : 0;
@@ -252,4 +247,42 @@ img {
     color: #fff;
     text-shadow: 2px 4px 3px rgba(0, 0, 0, .3);
     z-index: 5;
+}
+
+.job-img{
+    width: 200px;
+    height: auto;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.job-employer-name{
+
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.job-date{
+    color: lightgrey;
+    opacity: 0.8;
+    font-size: 1.5em;
+    text-align: center;
+    font-style: italic;
+    margin-top: 0;
+
+}
+
+.job-description{
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    padding-left: 5px;
+    padding-right: 5px;
 }
