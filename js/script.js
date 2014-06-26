@@ -44,3 +44,20 @@ function changeMenuClass(){
         console.log("moving-right");
     }
 }
+
+$(document).ready(function(){
+
+    var toggleMenuIds = ["#menu-toggle", "#smoke-screen"];
+    for (var id in toggleMenuIds) {
+        console.log(id);
+        $(toggleMenuIds[id]).click(
+            function(){
+                changeMenuClass();
+            }
+        );
+    }
+
+
+
+
+});
