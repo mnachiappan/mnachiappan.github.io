@@ -1,0 +1,101 @@
+.name-meyyappan {
+    font-size: 6em;
+    font-weight: 500;
+    color: white;
+    font-family: "Grand Hotel", cursive;
+}
+
+@media (max-width: 355px) {
+    .name-meyyappan {
+        font-size: 4em;
+    }
+}
+
+.fa-angle-down-custom {
+    font-size: 7em;
+    color: #fff;
+    opacity: .6;
+}
+
+@media (max-width: 411px) {
+    .fa-angle-down-custom {
+        font-size: 5em;
+    }
+}
+
+#motto-top {
+    color: #fff;
+    opacity: .6;
+    line-height: 1.25em;
+    /*margin: 2em 0 4em;*/
+    margin-top: 2em;
+}
+
+#name-uni {
+
+    display: inline-block;
+}
+
+
+.fa-logo {
+    font-size: 3em;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    opacity: 0.3;
+}
+
+.page-title{
+    font-family: "Open Sans",Helvetica Neue,sans-serif;
+    color: white;
+    font-size: 7em;
+    font-weight: 800;
+}
+
+.page-title-white{
+    color: #494f55;
+    color: #393f45;
+}
+
+.university-content {
+    line-height: 2.3em;
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+
+.info-title{
+    font-family: "Open Sans",Helvetica Neue,sans-serif;
+    color: #494f55;
+    font-size: 2em;
+    text-align: center;
+}
+
+.info-title-white{
+    color: #494f55;
+}
+
+.info-sub{
+    color: #606060;
+    opacity: 0.8;
+    font-size: 1.5em;
+    text-align: center;
+    font-style: italic;
+    margin-top: 0;
+
+}
+
+.info-description{
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.info-description-white{
+    color: #494f55;
+}
+
+.info-container{
+    margin-top: 3em;
+}
