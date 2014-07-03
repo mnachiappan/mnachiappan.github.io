@@ -47,7 +47,7 @@ function changeMenuClass(){
 
 $(document).ready(function(){
 
-    var toggleMenuIds = ["#menu-toggle", "#smoke-screen"];
+    var toggleMenuIds = ["#menu-toggle", "#smoke-screen", ".nav-close-button", ".navigation-ul .custom-nav"];
     for (var id in toggleMenuIds) {
         console.log(id);
         $(toggleMenuIds[id]).click(
