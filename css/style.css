@@ -211,9 +211,13 @@ body {
 }
 
 .section-heading{
-    padding-top: 8em;
-    padding-bottom: 8em;
+    padding-top: 6em;
+    padding-bottom: 6em;
 }
 
+.section-content{
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
 
 

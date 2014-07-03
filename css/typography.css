@@ -47,7 +47,7 @@
 .page-title{
     font-family: "Open Sans",Helvetica Neue,sans-serif;
     color: white;
-    font-size: 7em;
+    font-size: 5em;
     font-weight: 800;
 }
 
@@ -85,7 +85,7 @@
 }
 
 .info-description{
-    color: white;
+    color: #494f55;
     text-align: center;
     font-size: 1.5em;
     padding-left: 5px;
