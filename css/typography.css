@@ -23,6 +23,14 @@
     }
 }
 
+#external-links li{
+    opacity: 0.8;
+    color: #fff;
+    font-size: 5em;
+}
+
+
+
 #motto-top {
     color: #fff;
     opacity: .6;

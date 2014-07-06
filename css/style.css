@@ -112,7 +112,7 @@ body {
 }
 
 .yellow-bg {
-    background-color: #FFCC2F;
+    background-color: forestgreen;
 }
 
 .red-bg {
@@ -136,9 +136,13 @@ body {
     background-color: white;
 }
 
+.brickred-bg {
+    background-color: #990c0d;
+}
+
 .bottom-90 {
     position: absolute;
-    bottom: 10px;
+    bottom: 1em;
 }
 
 .angle-down-animation {
@@ -207,7 +211,6 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 .section-heading{
@@ -258,4 +261,46 @@ li.custom-nav:hover{
 
 .navigation-ul{
     margin-top: 20%;
+}
+
+#external-links{
+    padding-left: 0;
+    margin-top: 4em;
+}
+
+#external-links li{
+    display: inline;
+    list-style-type: none;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#external-links li:hover{
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    opacity: 1;
+    -webkit-animation-name: tada;
+    animation-name: tada;
+}
+
+@-webkit-keyframes tada {
+    0% {-webkit-transform: scale(1);}
+    10%, 20% {-webkit-transform: scale(0.9) rotate(-3deg);}
+    30%, 50%, 70%, 90% {-webkit-transform: scale(1.1) rotate(3deg);}
+    40%, 60%, 80% {-webkit-transform: scale(1.1) rotate(-3deg);}
+    100% {-webkit-transform: scale(1) rotate(0);}
+}
+@keyframes tada {
+    0% {transform: scale(1);}
+    10%, 20% {transform: scale(0.9) rotate(-3deg);}
+    30%, 50%, 70%, 90% {transform: scale(1.1) rotate(3deg);}
+    40%, 60%, 80% {transform: scale(1.1) rotate(-3deg);}
+    100% {transform: scale(1) rotate(0);}
+}
+
+#external-links li a{
+    color: inherit;
+    text-decoration: none;
 }
