@@ -112,7 +112,8 @@ body {
 }
 
 .yellow-bg {
-    background-color: forestgreen;
+    /*background-color: forestgreen;*/
+    background-color: #FFB03B;
 }
 
 .red-bg {
@@ -314,4 +315,8 @@ li.custom-nav:hover{
 #external-links li a{
     color: inherit;
     text-decoration: none;
+}
+
+#basic-info .info-description{
+    margin-top: 20px;
 }

@@ -25,10 +25,8 @@ function changeMenuClass(){
     var screen = document.getElementById("smoke-screen");
     var className = screen.className;
     if(className === openscreen){
-        console.log("hidingscreen");
         screen.className = hidescreen;
     }else if(className === hidescreen){
-        console.log("Opening screen");
         screen.className = openscreen;
     }
 
@@ -37,11 +35,9 @@ function changeMenuClass(){
     var closure = document.getElementById("closure");
     var closureClassName = closure.className;
     if(closureClassName === "move-right"){
-        console.log("moving-left");
         closure.className = "regular-screen";
     }else{
         closure.className = "move-right";
-        console.log("moving-right");
     }
 }
 
@@ -49,7 +45,6 @@ $(document).ready(function(){
 
     var toggleMenuIds = ["#menu-toggle", "#smoke-screen", ".nav-close-button", ".navigation-ul .custom-nav"];
     for (var id in toggleMenuIds) {
-        console.log(id);
         $(toggleMenuIds[id]).click(
             function(){
                 changeMenuClass();
