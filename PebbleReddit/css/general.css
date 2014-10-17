@@ -133,3 +133,16 @@ form {
 input{
    text-align:center;
 }
+
+a {
+	color: #ffe8e7;
+}
+
+.error-message {
+	text-align: center;
+	font-size: 2em;
+}
+
+.redditLinks:hover {
+	color: #ffe8e7;
+}
