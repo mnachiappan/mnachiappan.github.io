@@ -1,11 +1,11 @@
-p, ul {
+p, ul, code {
   margin-bottom: 20px;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.4;
 }
 @media (min-width: 768px) {
-  p, ul {
+  p, ul, code {
     font-size: 21px;
   }
 }
