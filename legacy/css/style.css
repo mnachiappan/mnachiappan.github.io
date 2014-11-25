@@ -122,7 +122,19 @@ body {
 
 .lilac-bg {
 
-    background-color: rgb(133, 105, 151);
+    /*background-color: rgb(133, 105, 151);*/
+    
+    /*
+    background-image: url("../img/congruent_pentagon.png");
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    */
+
+    background: url("../img/stardust.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .aqua-bg {
