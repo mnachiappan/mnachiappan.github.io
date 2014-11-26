@@ -120,16 +120,7 @@ body {
     background-color: indianred;
 }
 
-.lilac-bg {
-
-    /*background-color: rgb(133, 105, 151);*/
-    
-    /*
-    background-image: url("../img/congruent_pentagon.png");
-    background-repeat: repeat-x;
-    background-repeat: repeat-y;
-    */
-
+.main-bg {
     background: url("../img/stardust.png") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -143,6 +134,11 @@ body {
 
 .blue-bg {
     background-color: #336699;
+    background: url("../img/honey_im_subtle.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;   
 }
 
 .white-bg{
