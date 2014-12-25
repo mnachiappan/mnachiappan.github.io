@@ -15,10 +15,13 @@
 		<script src="js/jquery.scrolly.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/init.js"></script>
+		<script src="js/flappy/phaser.min.js"></script>
+		<script src="js/flappy/main.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-desktop.css" />
+			<link rel="stylesheet" href="css/custom.css" />
 		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
@@ -92,6 +95,14 @@
 				</article>
 			</div>
 		-->
+		<div class="wrapper style3" style="text-align: center;">
+			<article>
+				<header>
+					<h2>Try out my take on Flappy Birds</h2>
+				</header>
+			</article>
+			<span id="flappyCanvas" style="display: inline-block;"></span>
+		</div>
 		<!-- Portfolio -->
 			<div class="wrapper style3">
 				<article id="portfolio">
@@ -192,4 +203,7 @@
 			</div>
 
 	</body>
+	<script type="text/javascript">
+		initFlappy('flappyCanvas');
+	</script>
 </html>
