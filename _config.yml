@@ -1,0 +1,32 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Meyyappan
+tagline:          'A Jekyll theme'
+description:      'Discover | Learn | Create'
+url:              http://127.0.0.1:4000
+baseurl:          /
+
+author:
+  name:           'Mark Otto'
+  url:            https://twitter.com/mdo
+
+paginate:         5
+
+paginate_path: "page:num"
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           https://github.com/poole/hyde
+
+# Gems
+gems:
+  - jekyll-paginate
+  - jekyll-gist

@@ -1,209 +1,37 @@
-<!DOCTYPE HTML>
-<!--
-	Miniport by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Meyyappan Nachiappan</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery.scrolly.min.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/init.js"></script>
-		<script src="js/flappy/phaser.min.js"></script>
-		<script src="js/flappy/main.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-desktop.css" />
-			<link rel="stylesheet" href="css/custom.css" />
-		</noscript>
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
-	</head>
-	<body>
+---
+layout: default
+title: Home
+---
 
-		<!-- Nav -->
-			<nav id="nav">
-				<ul class="container">
-					<li><a href="#top">Top</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</nav>
+<div class="posts">
+  {% for post in paginator.posts %}
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h1>
 
-		<!-- Home -->
-			<div class="wrapper style1 first">
-				<article class="container" id="top">
-					<div class="row">
-						
-						<div class="4u">
-							<!--<span class="image fit"><img src="images/pic00.jpg" alt="" /></span>-->
-						</div>
-					
-						<div class="8u">
-							<header>
-								<h1><strong>Meyyappan Nachiappan</strong></h1>
-							</header>
-							<p>I'm a maker of fine things.</p>
-						</div>
-					</div>
-				</article>
-			</div>
+    <span class="post-date">{{ post.date | date_to_string }}</span>
 
-		<!-- Work -->
-		<!--
-			<div class="wrapper style2">
-				<article id="projects">
-					<header>
-						<h2>Here's some of my projects.</h2>
-					</header>
-					<div class="container">
-						<div class="row">
-							<div class="4u">
-								<section class="box style1">
-									<span class="icon featured fa-comments-o"></span>
-									<h3><a href="http://myratingz.herokuapp.com">myRatings</a></h3>
-									<p>Web app to rate and review movies, books &amp; restaurants.</p>
-								</section>
-							</div>
-							<div class="4u">
-								<section class="box style1">
-									<span class="icon featured fa-camera-retro"></span>
-									<h3><a href="http://chartgen.org/">Chart Gen</a></h3>
-									<p>App to generate responsive HTML5 bar, line &amp; radar charts.</p>
-								</section>
-							</div>
-							<div class="4u">
-								<section class="box style1">
-									<span class="icon featured fa-thumbs-o-up"></span>
-									<h3><a href="http://mnachiappan.com/pebble/">Reddit Search</a></h3>
-									<p>Search for recent &amp; top reddit posts in a beautiful UI.</p>
-								</section>
-							</div>
-						</div>
-					</div>
-					<footer>
-						<p>Continue on to see my work experienc</p>
-						<a href="#portfolio" class="button big scrolly">See some of my recent work</a>
-					</footer>
-				</article>
-			</div>
-		-->
-		<div class="wrapper style3" style="text-align: center;">
-			<article>
-				<header>
-					<h2>Try out my take on Flappy Birds</h2>
-				</header>
-			</article>
-			<span id="flappyCanvas" style="display: inline-block;"></span>
-		</div>
-		<!-- Portfolio -->
-			<div class="wrapper style3">
-				<article id="portfolio">
-					<header>
-						<h2>Here's some of my projects.</h2>
-					</header>
-					<div class="container">
-						<div class="row">
-							<div class="4u">
-								<article class="box style2">
-									<a href="http://myratingz.herokuapp.com" class="image featured"><img src="images/portfolio_myratings.png" alt="" /></a>
-									<h3><a href="http://myratingz.herokuapp.com">myRatings</a></h3>
-									<p>Web app to rate and review movies, books &amp; restaurants.</p>
-								</article>
-							</div>
-							<div class="4u">
-								<article class="box style2">
-									<a href="http://chartgen.org/" class="image featured"><img src="images/portfolio_chart_gen.png" alt="" /></a>
-									<h3><a href="http://chartgen.org/">Chart Gen</a></h3>
-									<p>App to generate responsive HTML5 bar, line &amp; radar charts.</p>
-								</article>
-							</div>
-							<div class="4u">
-								<article class="box style2">
-									<a href="http://mnachiappan.com/pebble/" class="image featured"><img src="images/portfolio_reddit_search.png" alt="" /></a>
-									<h3><a href="http://mnachiappan.com/pebble/">Reddit Search</a></h3>
-									<p>Search for recent &amp; top reddit posts in a beautiful UI.</p>
-								</article>
-							</div>
-						</div>
-						<div class="row">
-							<div class="4u">
-								<article class="box style2">
-									<a href="https://github.com/mnachiappan/python-backup" class="image featured"><img src="images/portfolio_git.png" alt="" /></a>
-									<h3><a href="https://github.com/mnachiappan/python-backup">Source Control Script</a></h3>
-									<p>Python script that records changes to a set of files so that previous versions of the files can be recalled.</p>
-								</article>
-							</div>
-							<div class="4u">
-								<article class="box style2">
-									<a href="" class="image featured"><img src="images/portfolio_finance.jpg" alt="" /></a>
-									<h3>Financial Simulator</h3>
-									<p>Simulator to practice trading futures contracts based on historical data. Soon to be released!</p>
-								</article>
-							</div>
-							<div class="4u">
-								<article class="box style2">
-									<a href="" class="image featured"><img src="images/portfolio_duckduckgo.png" alt="" /></a>
-									<h3>DuckDuckGo Instant Answer</h3>
-									<p>Contribute to the DuckDuckGo search engine&#39;s open source initiative.</p>
-								</article>
-							</div>
-						</div>
-					</div>
-					<footer>
-						<p>Do you like what you see?</p>
-						<a href="#contact" class="button big scrolly">Drop me a line</a>
-					</footer>
-				</article>
-			</div>
+    {{ post.content }}
+  </div>
+  {% endfor %}
+</div>
 
-		<!-- Contact -->
-			<div class="wrapper style4">
-				<article id="contact" class="container 75%">
-					<header>
-						<p>meyyappan1212 [at] gmail [dot] com</p>
-					</header>
-					<div>
-						<div class="row">
-							<div class="12u">
-								<hr />
-								<h3>Find me on ...</h3>
-								<ul class="social">
-									<li><a href="https://ca.linkedin.com/pub/meyyappan-nachiappan/88/772/90a" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://github.com/mnachiappan" class="icon fa-github"><span class="label">Github</span></a></li>
-									<!--
-									<li><a href="#" class="icon fa-rss"><span>RSS</span></a></li>
-									<li><a href="#" class="icon fa-instagram"><span>Instagram</span></a></li>
-									<li><a href="#" class="icon fa-foursquare"><span>Foursquare</span></a></li>
-									<li><a href="#" class="icon fa-skype"><span>Skype</span></a></li>
-									<li><a href="#" class="icon fa-soundcloud"><span>Soundcloud</span></a></li>
-									<li><a href="#" class="icon fa-youtube"><span>YouTube</span></a></li>
-									<li><a href="#" class="icon fa-blogger"><span>Blogger</span></a></li>
-									<li><a href="#" class="icon fa-flickr"><span>Flickr</span></a></li>
-									<li><a href="#" class="icon fa-vimeo"><span>Vimeo</span></a></li>
-									-->
-								</ul>
-								<hr />
-							</div>
-						</div>
-					</div>
-					<footer>
-						<ul id="copyright">
-							<li>&copy; Meyyappan Nachiappan.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</footer>
-				</article>
-			</div>
-
-	</body>
-	<script type="text/javascript">
-		initFlappy('flappyCanvas');
-	</script>
-</html>
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>
