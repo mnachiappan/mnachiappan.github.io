@@ -6,15 +6,14 @@ highlighter:      pygments
 permalink:        pretty
 
 # Setup
-title:            Meyyappan
+title:            Meyyappan Nachiappan
 tagline:          'A Jekyll theme'
 description:      'Discover | Learn | Create'
 url:              http://mnachiappan.github.io
 baseurl:          /
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'Meyyappan Nachiappan'
 
 paginate:         5
 
