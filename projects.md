@@ -7,6 +7,10 @@ title: Projects
   This page has some projects that I've worked on during my spare time. Contact me if you are interested in contributing or learning more about these projects!
 </p>
 
+## [UW RecSchedule](http://google.ca)
+![Rate My Quest project screenshot]({{ site.url }}/assets/hacktogether_screenshot.jpg)
+
+UW RecSchedule is an Android app that allows students to check Open Rec hours at various facilities at the University of Waterloo.
 
 ## [hackTogether](http://devpost.com/software/hacktogether-teybdf)
 
@@ -19,6 +23,10 @@ hackTogether is a web platform to connect hackathon participants, submit hackath
 ![Rate My Quest project screenshot]({{ site.url }}/assets/ratemyquest.png)
 
 Rate My Quest is a Chrome extension that allows direct access to professors' ratings from [Rate My Professors](https://www.ratemyprofessors.com/) in University of Waterloo's student information system. 
+
+## [Chart Gen](http://chartgen.github.io)
+
+Chart Gen is an AngularJS app to generate responsive HTML5 bar and line charts.
 
 ## [Candy Crush clone](https://github.com/mnachiappan/SquareSwapper-game)
 
