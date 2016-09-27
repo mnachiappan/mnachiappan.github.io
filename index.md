@@ -7,8 +7,9 @@ title: Home
   This page has some projects that I've worked on during my spare time. Contact me if you are interested in contributing or learning more about these projects!
 </p>
 
-## [UW RecSchedule](http://google.ca)
-![Rate My Quest project screenshot]({{ site.url }}/assets/hacktogether_screenshot.jpg)
+## UW RecSchedule
+
+<img src="http://mnachiappan.github.io/assets/recschedule.png" alt="Waterloo Schedule Image" style="height: 500px;"/>
 
 UW RecSchedule is an Android app that allows students to check Open Rec hours at various facilities at the University of Waterloo.
 
