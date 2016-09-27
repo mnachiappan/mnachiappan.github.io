@@ -1,6 +1,6 @@
 ---
-layout: page
-title: Projects
+layout: default
+title: Home
 ---
 
 <p class="message">
@@ -37,5 +37,3 @@ A simplified implementation of Candy Crush developed using C++.
 ## [RateMyProfessors Unofficial API](https://github.com/mnachiappan/SquareSwapper-game)
 
 Developed a REST API for RateMyProfessors.com with Flask and Redis.
-
-
