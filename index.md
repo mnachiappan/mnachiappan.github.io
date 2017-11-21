@@ -34,7 +34,3 @@ Chart Gen is an AngularJS app to generate responsive HTML5 bar and line charts.
 ![Candy crush clone screenshot]({{ site.url }}/assets/halloween.png)
 
 A simplified implementation of Candy Crush developed using C++. 
-
-## [RateMyProfessors Unofficial API](https://github.com/mnachiappan/SquareSwapper-game)
-
-Developed a REST API for RateMyProfessors.com with Flask and Redis.
